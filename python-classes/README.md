@@ -26,4 +26,4 @@ instance methods — built incrementally through a `Square` class.
 
 ## Author
 
-bahiizi11
+sanol-1
