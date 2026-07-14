@@ -8,7 +8,7 @@ def uppercase(str):
     Args:
         str: the string to print in uppercase
     """
-    for c in str:
+    for c in "{}".format(str):
         if 97 <= ord(c) <= 122:
             print("{:c}".format(ord(c) - 32), end="")
         else:
