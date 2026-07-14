@@ -38,4 +38,4 @@ built-in shortcuts where restricted.
 
 ## Author
 
-bahiizi11
+sanol-1
