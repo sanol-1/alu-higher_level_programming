@@ -1,14 +1,11 @@
 #!/usr/bin/python3
-"""Module that prints a string in uppercase"""
+
+
 
 
 def uppercase(str):
-    """Prints a string in uppercase followed by a new line
-
-    Args:
-        str: the string to print in uppercase
-    """
-    for c in "{}".format(str):
-        value = ord(c) - 32 if 97 <= ord(c) <= 122 else ord(c)
-        print("{:c}".format(value), end="")
-    print("")
+    for c in str:
+        if ord(c) >= ord('a') and ord(c) <= ord('z'):
+            c = chr(ord(c) - 32)
+        print("{}".format(c), end="")
+    print()
