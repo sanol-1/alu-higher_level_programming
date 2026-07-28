@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """Module that prints a string in uppercase"""
 
 
@@ -10,8 +9,6 @@ def uppercase(str):
         str: the string to print in uppercase
     """
     for c in "{}".format(str):
-        if 97 <= ord(c) <= 122:
-            print("{:c}".format(ord(c) - 32), end="")
-        else:
-            print("{:c}".format(ord(c)), end="")
+        value = ord(c) - 32 if 97 <= ord(c) <= 122 else ord(c)
+        print("{:c}".format(value), end="")
     print("")
